@@ -2,6 +2,8 @@
 
 A lightweight demonstration of GAN-based MRI synthesis and latent-space interpolation for synthetic brain tumor imagery.
 
+![Hero section](images/hero_section.png)
+
 ## Overview
 
 This project showcases how a generative model can produce realistic brain tumor scans from random latent vectors and how interpolation in latent space can create smooth transitions between generated samples.
@@ -10,6 +12,12 @@ The focus is on the ML pipeline:
 - A DCGAN-style generator trained to decode a 128-dimensional latent vector into a 64×64 RGB image.
 - Latent interpolation using both linear interpolation (LERP) and spherical linear interpolation (SLERP).
 - Visualization of synthetic tumor samples and how latent paths evolve between two points in the learned manifold.
+
+## Gallery
+
+A selection of synthetic MRI scans from the generator, with an example interpolation result that highlights how the model navigates its latent space.
+
+![Gallery](images/gallery.png)
 
 ## GAN Architecture
 
@@ -33,6 +41,8 @@ The project demonstrates two common interpolation strategies in the GAN latent s
   - Better preserves vector magnitude and often produces smoother transitions between GAN samples.
 
 These interpolation techniques let you inspect the generator’s learned manifold, and they reveal how subtle changes in latent variables affect the generated image.
+
+![Latent interpolation](images/interpolation_gif.gif)
 
 ## Use Cases and Motivation
 
