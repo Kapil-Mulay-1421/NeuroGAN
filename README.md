@@ -15,7 +15,7 @@ The focus is on the ML pipeline:
 
 ## Gallery
 
-A selection of synthetic MRI scans from the generator, which shows images generated from across the latent space.
+A selection of synthetic MRI scans from the generator, which shows images generated from random tensors distributed across the latent space.
 
 ![Gallery](images/gallery.png)
 
