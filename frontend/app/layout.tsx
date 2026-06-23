@@ -12,10 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Brain MRI Tumor Augmentation — DCGAN Demo",
+export const metadata = {
+  title: "NeuroGAN",
   description:
-    "A Deep Convolutional GAN trained on brain MRI tumor scans to generate synthetic images and explore the learned latent space through LERP and SLERP interpolation.",
+    "Interactive Brain MRI Generation and Latent Space Exploration using GANs",
 };
 
 export default function RootLayout({

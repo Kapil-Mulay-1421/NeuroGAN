@@ -1,4 +1,4 @@
-# brain_tumor_dataset_augmentation
+# NeuroGAN
 
 A lightweight demonstration of GAN-based MRI synthesis and latent-space interpolation for synthetic brain tumor imagery.
 
