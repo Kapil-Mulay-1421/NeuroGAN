@@ -568,8 +568,8 @@ export default function Home() {
 <p className="section-label">Gallery</p>
       <h2 className="section-title">Sample Generated Tumors</h2>
       <p className="section-desc" style={{ marginBottom: 32 }}>
-        A batch of 18 synthetic scans sampled from across the latent space — loaded
-            automatically on page load. Click any image to enlarge.
+        A batch of 18 synthetic scans sampled from across the latent space — generated
+            freshly on page load.
           </p>
 
           {galleryImages.length > 0 ? (
