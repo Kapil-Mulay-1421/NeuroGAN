@@ -21,6 +21,8 @@ A selection of synthetic MRI scans from the generator, which shows images genera
 
 ## GAN Architecture
 
+![Model architecture](images/Model_Architecture.png)
+
 The generator is a classic convolutional decoder built with `torch.nn.ConvTranspose2d` blocks:
 - Input: 128-dimensional noise vector reshaped to `128×1×1`
 - Four upsampling transpose-convolution layers with batch normalization and ReLU
@@ -54,6 +56,8 @@ Synthetic data generation and latent interpolation are useful for:
 While this demo generates synthetic tumor-like scans and interpolates, a production-ready diagnostic tool for early-detection of brain tumors may also be developed using the same technology. However, it would require the training of a class-aware DCGAN using a much larger, high-resolution dataset for reliable inferences.
 
 ## Tech Stack
+
+![NeuroGAN architecture](images/NeuroGAN_Architecture.png)
 
 - **Python**
 - **PyTorch** for the GAN generator and latent-space inference
