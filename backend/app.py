@@ -192,3 +192,7 @@ def gallery(request: GalleryRequest):
     return {
         "images": images
     }
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}

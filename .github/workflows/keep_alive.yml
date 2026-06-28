@@ -1,12 +1,15 @@
 name: HF Space Keep Alive
+
 on:
   schedule:
-    - cron: '*/20 * * * *' # Pings every 20 minutes
+    - cron: '*/20 * * * *' # Every 20 minutes
   workflow_dispatch:
-2. Jobs:
+
+jobs:
   keep-alive:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Pinging HF Space
+      - name: Ping HF Space
         run: |
-          curl -I https://mockingjay-7-neurogan-backend.hf.space
+          curl -L --fail https://mockingjay-7-neurogan-backend.hf.space/health
